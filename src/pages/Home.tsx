@@ -15,7 +15,7 @@ function Home() {
                             Welcome to the Future
                         </h1>
                         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-                            Innovative technology companies with shared ownership.
+                            Innovative technology companies with shared ownership
                         </p>
                     </div>
                 </div>

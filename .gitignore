@@ -1,3 +1,4 @@
+/.vs
 # Logs
 logs
 *.log
@@ -22,3 +23,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+/.vs
+.vs/untether-group-website/CopilotIndices/17.12.38.29086/SemanticSymbols.db-shm
