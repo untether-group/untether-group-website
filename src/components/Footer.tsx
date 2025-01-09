@@ -1,5 +1,6 @@
 import React from 'react';
 import { Building2 } from 'lucide-react';
+import logo from '../assets/Untether_Text_White.svg';
 
 export function Footer() {
   return (
@@ -8,11 +9,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center">
-              <Building2 className="h-8 w-8 text-blue-500" />
-              <span className="ml-2 text-xl font-bold text-white">CompanyName</span>
+              <img src={logo} alt="Company Logo" className="h-8 w-auto" />
             </div>
             <p className="mt-4 text-sm">
-              Building the future, one innovation at a time.
+              Building the future, one company at a time.
             </p>
           </div>
           
@@ -33,15 +33,16 @@ export function Footer() {
           </div>
           
           <div>
-            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Company</h3>
+            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Untether Ltd.</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <p className="text-sm">123 Business Street</p>
-                <p className="text-sm">Tech City, TC 12345</p>
+                              <p className="text-sm">61 Bridge Street</p>
+                              <p className="text-sm">Kington, HR5 3DJ</p>
+                              <p className="text-sm">Registered in England. Company 06865665</p>
               </li>
               <li>
-                <a href="mailto:contact@company.com" className="text-sm hover:text-white transition">
-                  contact@company.com
+                <a href="mailto:hello@untether.group" className="text-sm hover:text-white transition">
+                  hello@untether.group
                 </a>
               </li>
             </ul>
@@ -50,7 +51,7 @@ export function Footer() {
         
         <div className="mt-8 pt-8 border-t border-gray-800">
           <p className="text-sm text-center">
-            © {new Date().getFullYear()} CompanyName. All rights reserved.
+            © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
       </div>
