@@ -36,9 +36,10 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Untether Ltd.</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                              <p className="text-sm">61 Bridge Street</p>
-                              <p className="text-sm">Kington, HR5 3DJ</p>
-                              <p className="text-sm">Registered in England. Company 06865665</p>
+                <p className="text-sm">61 Bridge Street</p>
+                <p className="text-sm">Kington, HR5 3DJ</p>
+                <p className="text-sm">Registered in England</p>
+                <p className="text-sm">Company 06865665</p>
               </li>
               <li>
                 <a href="mailto:hello@untether.group" className="text-sm hover:text-white transition">
