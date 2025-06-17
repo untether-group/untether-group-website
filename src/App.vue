@@ -1,11 +1,5 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
-import Navigation from './components/Navigation.vue'
-import HeroSection from './components/HeroSection.vue'
-import ServicesSection from './components/ServicesSection.vue'
-import AboutSection from './components/AboutSection.vue'
-import ContactSection from './components/ContactSection.vue'
-import FooterSection from './components/FooterSection.vue'
 
 // Intersection Observer for fade-in animations
 let observer: IntersectionObserver | null = null
