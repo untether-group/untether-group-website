@@ -4,7 +4,8 @@
     "exclude": [
       "/assets/*",
       "/images/*",
-      "/videos/*",
+  "/videos/*",
+  "/foodtopia/*",
       "/favicon.ico",
       "/robots.txt",
       "/sitemap.xml"

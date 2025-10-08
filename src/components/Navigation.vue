@@ -12,6 +12,7 @@ const closeMenu = () => {
   isMenuOpen.value = false
 }
 
+
 const scrollToSection = (sectionId: string) => {
   // If we're not on the home page, navigate there first
   if (window.location.pathname !== '/') {
@@ -60,6 +61,7 @@ onUnmounted(() => {
           <a @click="scrollToSection('services')" class="nav-link">Services</a>
           <a @click="scrollToSection('about')" class="nav-link">About</a>
           <a @click="scrollToSection('contact')" class="nav-link">Contact</a>
+          <router-link to="/foodtopia" class="nav-link" @click="closeMenu">Foodtopia</router-link>
         </div>
       </div>
     </div>
