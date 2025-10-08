@@ -11,6 +11,8 @@ npm run dev
 
 ## Foodtopia HTML5 build
 
+IMPORTANT: Compare the index.html generated from Godot with `public/foodtopia/index.html` because there are some changes to the template to make it run on the website.
+
 The `/foodtopia` route embeds a Godot HTML5 export inside an iframe. To update the build:
 
 1. Export your project from Godot using the **HTML5** preset.
