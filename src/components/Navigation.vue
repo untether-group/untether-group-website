@@ -61,7 +61,6 @@ onUnmounted(() => {
           <a @click="scrollToSection('services')" class="nav-link">Services</a>
           <a @click="scrollToSection('about')" class="nav-link">About</a>
           <a @click="scrollToSection('contact')" class="nav-link">Contact</a>
-          <router-link to="/foodtopia" class="nav-link" @click="closeMenu">Foodtopia</router-link>
         </div>
       </div>
     </div>
