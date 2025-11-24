@@ -4,7 +4,6 @@ import PrivacyPolicy from './components/PrivacyPolicy.vue'
 import CookiePolicy from './components/CookiePolicy.vue'
 import TermsWebsite from './components/TermsWebsite.vue'
 import TermsServices from './components/TermsServices.vue'
-import Foodtopia from './components/Foodtopia.vue'
 
 const routes = [
   {
@@ -31,11 +30,6 @@ const routes = [
     path: '/terms-services',
     name: 'TermsServices',
     component: TermsServices
-  },
-  {
-    path: '/foodtopia',
-    name: 'Foodtopia',
-    component: Foodtopia
   }
 ]
 

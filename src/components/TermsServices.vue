@@ -147,13 +147,22 @@ onMounted(() => {
               <h3>9. WARRANTY</h3>
               <div class="clause-list">
                 <div class="clause-item">
-                  <strong>9.1</strong> The Supplier warrants that as from the date of delivery for a period of one year the goods and all their component parts, where applicable, are free from any defects in design, workmanship, construction or materials.
+                  <strong>9.1</strong> Limited Warranty: The Supplier warrants that, for a period of one month from the date of delivery ("Warranty Period"), the Software will function in material conformity with the functionality described in the Scope of Work/Specification.
+                </div>
+                   <div class="clause-item">
+                  <strong>9.2</strong> Exclusions: The warranty in Clause 9.1 does not apply to, and the Supplier shall not be liable for, defects or errors resulting from:
+    
+              <div class="sub-clause-list">
+                    <div class="sub-clause-item"><strong>9.2.1</strong> Updates, upgrades, or patches to third-party operating systems, firmware, or web browsers (e.g., iOS, Android, Chrome) released after delivery;</div>
+                    <div class="sub-clause-item"><strong>9.2.2</strong> Changes to third-party APIs or services (e.g., Google Maps, Facebook Login) relied upon by the Software;</div>
+                    <div class="sub-clause-item"><strong>9.2.3</strong> Any modifications to the Software made by any party other than the Supplier.</div>
+                  </div>
                 </div>
                 <div class="clause-item">
-                  <strong>9.2</strong> The Supplier warrants that the services performed under this Agreement shall be performed using reasonable skill and care, and of a quality conforming to generally accepted industry standards and practices.
+                  <strong>9.3</strong> The Supplier warrants that the services performed under this Agreement shall be performed using reasonable skill and care, and of a quality conforming to generally accepted industry standards and practices.
                 </div>
                 <div class="clause-item">
-                  <strong>9.3</strong> Except as expressly stated in this Agreement, all warranties whether express or implied, by operation of law or otherwise, are hereby excluded in relation to the goods and services to be provided by the Supplier.
+                  <strong>9.4</strong> Except as expressly stated in this Agreement, all warranties whether express or implied, by operation of law or otherwise, are hereby excluded in relation to the goods and services to be provided by the Supplier.
                 </div>
               </div>
             </section>
