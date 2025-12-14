@@ -16,7 +16,7 @@ onMounted(() => {
         <div class="legal-content">
           <h1>Terms and Conditions</h1>
           <h2 class="subtitle">For the supply of goods and services of Untether Ltd.</h2>
-          <div class="last-updated">Last updated: 2025-11-28</div>
+          <div class="last-updated">Last updated: 2025-12-14</div>
           
           <div class="content-section">
             <section>
@@ -24,7 +24,7 @@ onMounted(() => {
               <p>In this document the following words shall have the following meanings:</p>
               <div class="definition-list">
                 <div class="definition-item">
-                  <strong>1.1</strong> "Agreement" means these Terms and Conditions together with the terms of any applicable Specification Document;
+                  <strong>1.1</strong> "Agreement" means these Terms and Conditions together with the terms of any applicable Statement of Work;
                 </div>
                 <div class="definition-item">
                   <strong>1.2</strong> "Customer" means the organisation or person who purchases services and/or Deliverables from the Supplier;
@@ -36,22 +36,22 @@ onMounted(() => {
                   <strong>1.4</strong> "Confidential Information" means any information disclosed by one party (the "Disclosing Party") to the other party (the "Receiving Party") in connection with this Agreement which is marked as confidential, proprietary, or trade secret, or which, under the circumstances, should reasonably be considered confidential. This includes, but is not limited to, trade secrets, proprietary technology, source code, research, development plans, product designs, business plans, marketing materials, financial data, and personal data.
                 </div>
                 <div class="definition-item">
-                  <strong>1.5</strong> "Specification Document" means a statement of work, quotation or other similar document describing the services and Deliverables to be provided by the Supplier.
+                  <strong>1.5</strong> "Statement of Work" means a statement of work, quotation or other similar document describing the services and Deliverables to be provided by the Supplier.
                 </div>
                 <div class="definition-item">
                   <strong>1.6</strong> "Statutory Interest" means statutory interest as defined in the Late Payment of Commercial Debts (Interest) Act 1998 as amended & supplemented by the Late Payment of Commercial Debts Regulations 2002.
                 </div>
                   <div class="definition-item">
-                  <strong>1.7</strong>  "Effective Date" means the date on which the Customer signs or otherwise accepts the Specification Document to which these Terms and Conditions are attached.
+                  <strong>1.7</strong>  "Effective Date" means the date on which the Customer signs or otherwise accepts the Statement of Work to which these Terms and Conditions are attached.
                 </div>
                  <div class="definition-item">
                   <strong>1.8</strong> "Business Day" means a day other than a Saturday, Sunday or public holiday in England when banks in London are open for business.
                 </div>
                   <div class="definition-item">
-                  <strong>1.9</strong> "Deliverables" means the services and Deliverables to be supplied by the Supplier (including, without limitation, the development of software, games, applications and related consultancy services) as described in the Specification Document.
+                  <strong>1.9</strong> "Deliverables" means the services and Deliverables to be supplied by the Supplier (including, without limitation, the development of software, games, applications and related consultancy services) as described in the Statement of Work.
                 </div>
                                 <div class="definition-item">
-                  <strong>1.10</strong> “Software” means the software components of the Deliverables (including any games, applications or tools developed by the Supplier under this Agreement) in object code form and, where expressly stated in the Specification Document, in source code form.
+                  <strong>1.10</strong> “Software” means the software components of the Deliverables (including any games, applications or tools developed by the Supplier under this Agreement) in object code form and, where expressly stated in the Statement of Work, in source code form.
                 </div>
                  <div class="definition-item">
                   <strong>1.10</strong> "Supplier" means Untether Ltd, 61 Bridge Street, Kington, Herefordshire, HR5 3DJ, United Kingdom.
@@ -66,7 +66,7 @@ onMounted(() => {
                   <strong>2.1</strong> These Terms and Conditions shall apply to all contracts for the supply of services and Deliverables by the Supplier to the Customer.
                 </div>
                 <div class="clause-item">
-                  <strong>2.2</strong> Before the commencement of the services the Supplier shall submit to the Customer a Specification Document which shall specify the services and Deliverables to be supplied and the price payable. The Customer shall notify the Supplier immediately if the Customer does not agree with the contents of the Specification Document. All Specification Documents shall be subject to these Terms and Conditions.
+                  <strong>2.2</strong> Before the commencement of the services the Supplier shall submit to the Customer a Statement of Work which shall specify the services and Deliverables to be supplied and the price payable. The Customer shall notify the Supplier immediately if the Customer does not agree with the contents of the Statement of Work. All Statement of Works shall be subject to these Terms and Conditions.
                 </div>
                 <div class="clause-item">
                   <strong>2.3</strong>  The Supplier shall use all reasonable endeavours to complete the services within estimated time frames but time shall not be of the essence in the performance of any services.
@@ -78,7 +78,7 @@ onMounted(() => {
               <h3>3. PRICE AND PAYMENT</h3>
               <div class="clause-list">
                 <div class="clause-item">
-                  <strong>3.1</strong> The price for the supply of services and Deliverables is set out in the Specification Document. The Supplier shall invoice the Customer upon the completion of agreed-upon project milestones, as detailed in the Specification Document. The Customer shall pay the invoiced amount for each completed milestone within a 30-day period of receiving the invoice, unless otherwise agreed in writing. An initial payment may be required upon commencement of the Project, as specified in the Specification Document.
+                  <strong>3.1</strong> The price for the supply of services and Deliverables is set out in the Statement of Work. The Supplier shall invoice the Customer upon the completion of agreed-upon project milestones, as detailed in the Statement of Work. The Customer shall pay the invoiced amount for each completed milestone within a 30-day period of receiving the invoice, unless otherwise agreed in writing. An initial payment may be required upon commencement of the Project, as specified in the Statement of Work.
                 </div>
                 <div class="clause-item">
                   <strong>3.2</strong> The customer shall have five working days to dispute the invoice. After such a period of time the invoice will be considered accepted by both parties and cannot be amended unless agreed in writing by the Supplier.
@@ -94,20 +94,20 @@ onMounted(() => {
 
             <section>
               <h3>4. SPECIFICATION OF SERVICES AND DELIVERABLES</h3>
-              <p>The Deliverables shall only be required to conform in all material respects to the Specification Document. For the avoidance of doubt no description, specification or illustration contained in any brochure, website, proposal or other sales or marketing literature of the Supplier and no representation, whether written or oral, correspondence or statement shall form part of the contract unless expressly set out in the Specification Document.</p>
+              <p>The Deliverables shall only be required to conform in all material respects to the Statement of Work. For the avoidance of doubt no description, specification or illustration contained in any brochure, website, proposal or other sales or marketing literature of the Supplier and no representation, whether written or oral, correspondence or statement shall form part of the contract unless expressly set out in the Statement of Work.</p>
             </section>
 
             <section>
               <h3>5. DELIVERY AND ACCEPTANCE</h3>
               <div class="clause-list">
                 <div class="clause-item">
-                  <strong>5.1</strong> TUnless otherwise stated in the Specification Document, the Deliverables shall be delivered by electronic means, including (without limitation) by download link, file transfer, email, or by granting the Customer access to a source code repository or project management system.
+                  <strong>5.1</strong> TUnless otherwise stated in the Statement of Work, the Deliverables shall be delivered by electronic means, including (without limitation) by download link, file transfer, email, or by granting the Customer access to a source code repository or project management system.
                 </div>
                 <div class="clause-item">
-                  <strong>5.2</strong> On delivery of the Deliverables, the Customer shall have 10 Business Days (the “Acceptance Period”) to test the Deliverables to confirm that they materially conform to the Specification Document.
+                  <strong>5.2</strong> On delivery of the Deliverables, the Customer shall have 10 Business Days (the “Acceptance Period”) to test the Deliverables to confirm that they materially conform to the Statement of Work.
                 </div>
                                 <div class="clause-item">
-                  <strong>5.3</strong>  The Customer shall notify the Supplier in writing before the end of the Acceptance Period if the Deliverables do not materially conform to the Specification Document, giving reasonable details of any defects or non-conformities.
+                  <strong>5.3</strong>  The Customer shall notify the Supplier in writing before the end of the Acceptance Period if the Deliverables do not materially conform to the Statement of Work, giving reasonable details of any defects or non-conformities.
                 </div>
                                 <div class="clause-item">
                   <strong>5.4</strong> If the Customer notifies the Supplier under clause 5.3, the Supplier shall use reasonable efforts to correct the reported defects and redeliver the affected Deliverables. The Customer shall then have a further 5 Business Days from redelivery to re-test the Deliverables.
@@ -127,17 +127,17 @@ onMounted(() => {
               <h3>6. DELIVERABLES AND LICENCE</h3>
               <div class="clause-list">
                 <div class="clause-item">
-                  <strong>6.1</strong> Except to the extent that the relevant Specification Document expressly provides otherwise in respect of specified Deliverables, all Intellectual Property Rights in the Deliverables shall be owned by the Supplier in accordance with clause 13. No title or ownership in any software, games, applications or other Deliverables is transferred to the Customer under this Agreement.
+                  <strong>6.1</strong> Except to the extent that the relevant Statement of Work expressly provides otherwise in respect of specified Deliverables, all Intellectual Property Rights in the Deliverables shall be owned by the Supplier in accordance with clause 13. No title or ownership in any software, games, applications or other Deliverables is transferred to the Customer under this Agreement.
                 </div>
                   <div class="clause-item">
-                  <strong>6.2</strong> Subject to the Customer’s payment in full of the charges set out in the Specification Document, the Supplier grants to the Customer a non-exclusive, non-transferable, non-sublicensable licence to use the Deliverables:
+                  <strong>6.2</strong> Subject to the Customer’s payment in full of the charges set out in the Statement of Work, the Supplier grants to the Customer a non-exclusive, non-transferable, non-sublicensable licence to use the Deliverables:
                   <div class="sub-clause-list">
-                    <div class="sub-clause-item"><strong>6.2.1</strong>  solely for the application, game or project described in the Specification Document (including any agreed platform or brand variants specified there); and </div>
+                    <div class="sub-clause-item"><strong>6.2.1</strong>  solely for the application, game or project described in the Statement of Work (including any agreed platform or brand variants specified there); and </div>
                     <div class="sub-clause-item"><strong>6.2.2</strong> solely for the Customer’s business purposes and to make the Deliverables available to end users as part of that application, game or project.</div>               
                   </div>
                 </div>
                   <div class="clause-item">
-                  <strong>6.3</strong> The Customer shall not (and shall not permit any third party to) copy, adapt, modify, localise, reskin or create derivative works based on the Deliverables, nor reverse engineer, decompile or disassemble the Deliverables, except to the extent permitted by law or expressly authorised in writing by the Supplier. Any changes, reskins or new versions of the Deliverables shall be implemented only by the Supplier under a separate specification document and fee agreement, unless the Supplier agrees otherwise in writing.
+                  <strong>6.3</strong> The Customer shall not (and shall not permit any third party to) copy, adapt, modify, localise, reskin or create derivative works based on the Deliverables, nor reverse engineer, decompile or disassemble the Deliverables, except to the extent permitted by law or expressly authorised in writing by the Supplier. Any changes, reskins or new versions of the Deliverables shall be implemented only by the Supplier under a separate Statement of Work and fee agreement, unless the Supplier agrees otherwise in writing.
                 </div>                                
               </div>
             </section>
@@ -151,18 +151,18 @@ onMounted(() => {
                     <div class="sub-clause-item"><strong>7.1.1</strong> co-operate with the Supplier;</div>
                     <div class="sub-clause-item"><strong>7.1.2</strong> provide the Supplier with any information reasonably required by the Supplier;</div>
                     <div class="sub-clause-item"><strong>7.1.3</strong> obtain all necessary permissions and consents which may be required before the commencement of the services; and</div>
-                    <div class="sub-clause-item"><strong>7.1.4</strong> comply with such other requirements as may be set out in the Specification Document or otherwise agreed between the parties.</div>
+                    <div class="sub-clause-item"><strong>7.1.4</strong> comply with such other requirements as may be set out in the Statement of Work or otherwise agreed between the parties.</div>
                   </div>
                 </div>
                 <div class="clause-item">
                   <strong>7.2</strong> The Customer shall be liable to compensate the Supplier for any expenses incurred by the Supplier as a result of the Customer's failure to comply with Clause 7.1.
                 </div>
                 <div class="clause-item">
-                  <strong>7.3</strong> Without prejudice to any other rights to which the Supplier may be entitled, in the event that the Customer cancels or terminates the services and/or Deliverables set out in the Specification Document other than in accordance with clause 12, the Customer shall pay to the Supplier:
+                  <strong>7.3</strong> Without prejudice to any other rights to which the Supplier may be entitled, in the event that the Customer cancels or terminates the services and/or Deliverables set out in the Statement of Work other than in accordance with clause 12, the Customer shall pay to the Supplier:
                       <div class="sub-clause-list">
                         <div class="sub-clause-item"><strong>7.3.1</strong> all fees and charges properly incurred for work performed up to the effective date of cancellation;</div>
-                        <div class="sub-clause-item"><strong>7.3.2</strong> the full amount of any non-refundable or non-cancellable third-party costs and commitments to which the Supplier has irrevocably committed in connection with the Specification Document; and</div>
-                        <div class="sub-clause-item"><strong>7.3.3</strong> a cancellation fee calculated as a percentage of the remaining fees that would have been payable under the Specification Document, as follows:</div>
+                        <div class="sub-clause-item"><strong>7.3.2</strong> the full amount of any non-refundable or non-cancellable third-party costs and commitments to which the Supplier has irrevocably committed in connection with the Statement of Work; and</div>
+                        <div class="sub-clause-item"><strong>7.3.3</strong> a cancellation fee calculated as a percentage of the remaining fees that would have been payable under the Statement of Work, as follows:</div>
                           <div class="sub-clause-list">
                           <div class="sub-clause-item"><strong>i.</strong> where written notice of cancellation is given more than 20 Business Days before the next scheduled milestone or delivery date: 0% of the remaining fees;</div>
                           <div class="sub-clause-item"><strong>ii.</strong> where written notice of cancellation is given between 10 and 20 Business Days before the next scheduled milestone or delivery date: 25% of the remaining fees; and</div>
@@ -189,13 +189,13 @@ onMounted(() => {
             </section>
 
             <section>
-              <h3>8. ALTERATIONS TO THE SPECIFICATION DOCUMENT</h3>
+              <h3>8. ALTERATIONS TO THE Statement of Work</h3>
               <div class="clause-list">
                 <div class="clause-item">
-                  <strong>8.1</strong> The parties may at any time mutually agree upon and execute new or amended Specification Documents. Any alterations in the scope of the services or Deliverables (including, without limitation, any changes to software, games, applications or consultancy services) shall be set out in a revised Specification Document or written change request (“Change Request”). No Change Request shall be binding unless and until it has been confirmed in writing by both parties.
+                  <strong>8.1</strong> The parties may at any time mutually agree upon and execute new or amended Statement of Works. Any alterations in the scope of the services or Deliverables (including, without limitation, any changes to software, games, applications or consultancy services) shall be set out in a revised Statement of Work or written change request (“Change Request”). No Change Request shall be binding unless and until it has been confirmed in writing by both parties.
                 </div>
                 <div class="clause-item">
-                  <strong>8.2</strong> The Customer may at any time request alterations to the Specification Document by notice in writing to the Supplier. On receipt of such a request, the Supplier shall, within 5 Business Days or such other period as may be agreed between the parties, advise the Customer in writing of the effect of the proposed alterations, including any change to: 
+                  <strong>8.2</strong> The Customer may at any time request alterations to the Statement of Work by notice in writing to the Supplier. On receipt of such a request, the Supplier shall, within 5 Business Days or such other period as may be agreed between the parties, advise the Customer in writing of the effect of the proposed alterations, including any change to: 
                 <div class="sub-clause-list">
                     <div class="sub-clause-item"><strong>8.2.1</strong> the fees; and</div>
                     <div class="sub-clause-item"><strong>8.2.2</strong> the delivery dates, milestones or timetable.</div>
@@ -205,7 +205,7 @@ onMounted(() => {
                   <strong>8.3</strong> Where the Supplier confirms in writing that it is willing to implement the requested alterations, the Customer shall, within 5 Business Days of receipt of such confirmation or such other period as may be agreed, notify the Supplier in writing whether it wishes the alterations to proceed.
                 </div>
                 <div class="clause-item">
-                  <strong>8.4</strong> Once the parties have confirmed the Change Request in writing in accordance with this clause 8, the relevant Specification Document shall be deemed amended accordingly and the Supplier shall perform this Agreement on the basis of the amended scope, fees and delivery dates.
+                  <strong>8.4</strong> Once the parties have confirmed the Change Request in writing in accordance with this clause 8, the relevant Statement of Work shall be deemed amended accordingly and the Supplier shall perform this Agreement on the basis of the amended scope, fees and delivery dates.
                 </div>
               </div>
             </section>
@@ -214,14 +214,14 @@ onMounted(() => {
               <h3>9. WARRANTY</h3>
               <div class="clause-list">
                 <div class="clause-item">
-                  <strong>9.1</strong> Limited Warranty: The Supplier warrants that, for a period of one month from the date of delivery (the "Warranty Period"), the Software will function in material conformity with the functionality described in the Specification Document.
+                  <strong>9.1</strong> Limited Warranty: The Supplier warrants that, for a period of one month from the date of delivery (the "Warranty Period"), the Software will function in material conformity with the functionality described in the Statement of Work.
                 </div>
                    <div class="clause-item">
                   <strong>9.2</strong> Exclusions: The warranty in clause 9.1 does not apply to, and the Supplier shall not be liable for, defects or errors resulting from:  
               <div class="sub-clause-list">
                     <div class="sub-clause-item"><strong>9.2.1</strong> updates, upgrades or patches to third-party operating systems, firmware, web browsers or platforms (including, without limitation, iOS, Android, Windows, macOS, Chrome) released after delivery;</div>
                     <div class="sub-clause-item"><strong>9.2.2</strong> hanges to third-party APIs, SDKs or services (including, without limitation, app stores, analytics tools, or social login services) relied upon by the Software; or</div>
-                    <div class="sub-clause-item"><strong>9.2.3</strong> any modifications to the Software made by any person other than the Supplier, or use of the Software other than in accordance with the Specification Document or any documentation supplied by the Supplier.</div>
+                    <div class="sub-clause-item"><strong>9.2.3</strong> any modifications to the Software made by any person other than the Supplier, or use of the Software other than in accordance with the Statement of Work or any documentation supplied by the Supplier.</div>
                   </div>
                 </div>
                 <div class="clause-item">
@@ -249,14 +249,14 @@ onMounted(() => {
 
             <section>
               <h3>10. INDEMNIFICATION</h3>
-              <p>The Customer shall indemnify the Supplier against all claims, costs and expenses which the Supplier may incur and which arise, directly or indirectly, from the Customer's breach of any of its obligations under this Agreement, including any claims brought against the Supplier alleging that any services and/or Deliverables provided by the Supplier in accordance with the Specification Document infringe a patent, copyright or trade secret or other similar right of a third party.</p>
+              <p>The Customer shall indemnify the Supplier against all claims, costs and expenses which the Supplier may incur and which arise, directly or indirectly, from the Customer's breach of any of its obligations under this Agreement, including any claims brought against the Supplier alleging that any services and/or Deliverables provided by the Supplier in accordance with the Statement of Work infringe a patent, copyright or trade secret or other similar right of a third party.</p>
             </section>
 
             <section>
               <h3>11. LIMITATION OF LIABILITY</h3>
               <div class="clause-list">
                 <div class="clause-item">
-                  <strong>11.1</strong> Except in respect of death or personal injury due to negligence for which no limit applies, the entire liability of the Supplier to the Customer in respect of any claim whatsoever or breach of this Agreement, whether or not arising out of negligence, shall be limited to an amount equal to the total charges paid by the Customer to the Supplier under the Specification Document giving rise to the claim in the 12-month period immediately preceding the date on which the cause of action arose.
+                  <strong>11.1</strong> Except in respect of death or personal injury due to negligence for which no limit applies, the entire liability of the Supplier to the Customer in respect of any claim whatsoever or breach of this Agreement, whether or not arising out of negligence, shall be limited to an amount equal to the total charges paid by the Customer to the Supplier under the Statement of Work giving rise to the claim in the 12-month period immediately preceding the date on which the cause of action arose.
                 </div>
                 <div class="clause-item">
                   <strong>11.2</strong> In no event shall the Supplier be liable to the Customer for any loss of business, loss of opportunity or loss of profits or for any other indirect or consequential loss or damage whatsoever. This shall apply even where such a loss was reasonably foreseeable or the Supplier had been made aware of the possibility of the Customer incurring such a loss.
@@ -301,7 +301,7 @@ onMounted(() => {
                   </div>
                 </div>
                 <div class="clause-item">
-                  <strong>13.2</strong> Subject to any express provision in a Specification Document that certain Deliverables IPR shall be owned by the Customer, as between the parties all Supplier Background IPR and Deliverables IPR shall be owned by the Supplier. To the extent that any Deliverables IPR that is to be owned by the Supplier does not automatically vest in the Supplier by operation of law, the Customer hereby assigns, and shall procure that its employees, contractors and agents assign, all such rights to the Supplier with full title guarantee, and shall do all things reasonably necessary to give effect to such assignment.
+                  <strong>13.2</strong> Subject to any express provision in a Statement of Work that certain Deliverables IPR shall be owned by the Customer, as between the parties all Supplier Background IPR and Deliverables IPR shall be owned by the Supplier. To the extent that any Deliverables IPR that is to be owned by the Supplier does not automatically vest in the Supplier by operation of law, the Customer hereby assigns, and shall procure that its employees, contractors and agents assign, all such rights to the Supplier with full title guarantee, and shall do all things reasonably necessary to give effect to such assignment.
                 </div>
                 <div class="clause-item">
                   <strong>13.3</strong> As between the parties, all Intellectual Property Rights in the Customer Materials shall remain the property of the Customer. The Customer grants to the Supplier a non-exclusive, worldwide, royalty-free licence to use, copy, modify and adapt the Customer Materials solely for the purposes of performing this Agreement and creating the Deliverables.
@@ -321,10 +321,10 @@ onMounted(() => {
             <section>
               <h3>14. CUSTOMER HARDWARE AND ASSETS</h3>
                 <div class="clause-item">
-                  <strong>14.1</strong> The Customer shall supply to the Supplier, on or before the dates specified in the Specification Document, all hardware and all assets required for the development and/or final outcome of the project, including (without limitation) images, video, audio, copy, data, and any other files, designs, materials or descriptions that constitute Customer Materials.
+                  <strong>14.1</strong> The Customer shall supply to the Supplier, on or before the dates specified in the Statement of Work, all hardware and all assets required for the development and/or final outcome of the project, including (without limitation) images, video, audio, copy, data, and any other files, designs, materials or descriptions that constitute Customer Materials.
                 </div>
                                 <div class="clause-item">
-                  <strong>14.2</strong> If the Customer fails to supply the required hardware or Customer Materials by the dates specified in the Specification Document, the Supplier shall not be liable for any delay in, or late completion of, the project to the extent such delay is caused by that failure. The Supplier shall be entitled to a reasonable extension of any affected deadlines. 
+                  <strong>14.2</strong> If the Customer fails to supply the required hardware or Customer Materials by the dates specified in the Statement of Work, the Supplier shall not be liable for any delay in, or late completion of, the project to the extent such delay is caused by that failure. The Supplier shall be entitled to a reasonable extension of any affected deadlines. 
                 </div>
                   <div class="clause-item">
                   <strong>14.3</strong> The Customer warrants that it owns or has obtained all necessary rights, licences and permissions in respect of the Customer Materials and any hardware it supplies, and grants the Supplier a non-exclusive licence to use such Customer Materials and hardware solely for the purposes of performing this Agreement and delivering the Deliverables.
@@ -338,7 +338,7 @@ onMounted(() => {
 
             <section>
               <h3>16. INDEPENDENT CONTRACTORS</h3>
-              <p>The Supplier and the Customer are contractors independent of each other, and neither has the authority to bind the other to any third party or act in any way as the representative of the other, unless otherwise expressly agreed to in writing by both parties. The Supplier may, in addition to its own employees, engage sub-contractors to provide all or part of the services being provided to the Customer and such engagement shall not relieve the Supplier of its obligations under this Agreement or any applicable Specification Document.</p>
+              <p>The Supplier and the Customer are contractors independent of each other, and neither has the authority to bind the other to any third party or act in any way as the representative of the other, unless otherwise expressly agreed to in writing by both parties. The Supplier may, in addition to its own employees, engage sub-contractors to provide all or part of the services being provided to the Customer and such engagement shall not relieve the Supplier of its obligations under this Agreement or any applicable Statement of Work.</p>
             </section>
 
             <section>
@@ -370,7 +370,7 @@ onMounted(() => {
 
             <section>
               <h3>20. NOTICES</h3>
-              <p>Any notice to be given by either party to the other may be served by email, fax, personal service or by post to the address of the other party given in the Specification Document or such other address as such party may from time to time have communicated to the other in writing, and if sent by email shall unless the contrary is proved be deemed to be received on the day it was sent, if sent by fax shall be deemed to be served on receipt of an error free transmission report, if given by letter shall be deemed to have been served at the time at which the letter was delivered personally or if sent by post shall be deemed to have been delivered in the ordinary course of post.</p>
+              <p>Any notice to be given by either party to the other may be served by email, fax, personal service or by post to the address of the other party given in the Statement of Work or such other address as such party may from time to time have communicated to the other in writing, and if sent by email shall unless the contrary is proved be deemed to be received on the day it was sent, if sent by fax shall be deemed to be served on receipt of an error free transmission report, if given by letter shall be deemed to have been served at the time at which the letter was delivered personally or if sent by post shall be deemed to have been delivered in the ordinary course of post.</p>
             </section>
 
             <section>
