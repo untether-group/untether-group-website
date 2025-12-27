@@ -15,7 +15,7 @@ onMounted(() => {
       <div class="container">
         <div class="legal-content">
           <h1>Terms and Conditions</h1>
-          <h2 class="subtitle">For the supply of goods and services of Untether Ltd.</h2>
+          <h2 class="subtitle">For the supply of services of Untether Ltd.</h2>
           <div class="last-updated">Last updated: 2025-12-14</div>
           
           <div class="content-section">
