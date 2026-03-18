@@ -50,24 +50,33 @@ export default function Navbar() {
             )}
           </button>
         </div>
-        {/* Mobile menu overlay */}
-        {mobileMenuOpen && (
-          <div className="fixed inset-0 z-[120] bg-black/60 flex flex-col items-end md:hidden" onClick={handleMobileMenuClose}>
-            <div className="w-3/4 max-w-xs bg-surface h-full shadow-xl p-8 flex flex-col gap-6" onClick={e => e.stopPropagation()}>
-              <button className="self-end mb-4" onClick={handleMobileMenuClose} aria-label="Close menu">
-                <X size={28} />
-              </button>
-              <a href="" className="text-lg font-sans font-bold hover:text-accent transition-colors" onClick={handleMobileMenuClose}>Home</a>
-              <a href="#features" className="text-lg font-sans font-bold hover:text-accent transition-colors" onClick={handleMobileMenuClose}>Features</a>
-              <a href="#philosophy" className="text-lg font-sans font-bold hover:text-accent transition-colors" onClick={handleMobileMenuClose}>Philosophy</a>
-              <a href="#protocol" className="text-lg font-sans font-bold hover:text-accent transition-colors" onClick={handleMobileMenuClose}>Protocol</a>
-              <a href="#contact" className="mt-4 magnetic-btn magnetic-btn-accent px-4 py-2 text-base flex items-center justify-center" onClick={handleMobileMenuClose}>
-                <span>Contact</span>
-              </a>
-            </div>
-          </div>
-        )}
       </nav>
+
+      {/* Backdrop — closes menu when tapping outside */}
+      {mobileMenuOpen && (
+        <div
+          className="fixed inset-0 z-[90] md:hidden"
+          onClick={handleMobileMenuClose}
+        />
+      )}
+
+      {/* Mobile dropdown — sits below the capsule, sized to content */}
+      {mobileMenuOpen && (
+        <div
+          className="fixed left-1/2 -translate-x-1/2 top-[4.75rem] z-[95] w-[90%] max-w-[600px] md:hidden"
+          onClick={e => e.stopPropagation()}
+        >
+          <div className="bg-white rounded-2xl shadow-xl flex flex-col px-6 py-4 gap-1">
+            <a href="" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Home</a>
+            <a href="#features" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Features</a>
+            <a href="#philosophy" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Philosophy</a>
+            <a href="#protocol" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Protocol</a>
+            <a href="#contact" className="mt-2 magnetic-btn magnetic-btn-accent px-4 py-2 text-sm flex items-center justify-center" onClick={handleMobileMenuClose}>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      )}
     </>
   );
 }
