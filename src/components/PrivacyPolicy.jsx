@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center bg-surface pt-32 pb-16 px-4">
+    <div className="w-full min-h-screen flex flex-col items-center bg-neutral-900 pt-32 pb-16 px-4">
       <div className="w-full max-w-2xl bg-white rounded-2xl shadow-lg p-8 md:p-12">
         <h1 className="text-3xl font-bold text-accent mb-2">Privacy Policy for Untether</h1>
         <div className="text-xs text-dark/50 mb-6 pb-4 border-b border-dark/10">Last updated: January 2025</div>

@@ -29,7 +29,19 @@ export default function Navbar() {
     <>
       {/* Desktop Contact button in top right */}
       <div className="hidden md:block fixed top-6 right-8 z-[110]">
-        <a href="#contact" className="magnetic-btn magnetic-btn-accent px-4 py-1 text-xs flex items-center justify-center">
+        <a
+          href="#contact"
+          className="magnetic-btn magnetic-btn-accent px-4 py-1 text-xs flex items-center justify-center"
+          onClick={e => {
+            e.preventDefault();
+            if (location.pathname !== "/") {
+              sessionStorage.setItem('scrollToHash', '#contact');
+              window.location.href = '/';
+            } else {
+              window.location.hash = '#contact';
+            }
+          }}
+        >
           <span>Contact</span>
         </a>
       </div>
@@ -45,10 +57,57 @@ export default function Navbar() {
             untether.
           </div>
           <div className="hidden md:flex items-center space-x-8 text-sm font-sans font-medium">
-            <Link to="/" className="hover:text-accent transition-colors">Home</Link>
-            <a href="#features" className="hover:text-accent transition-colors">Features</a>
-            <a href="#philosophy" className="hover:text-accent transition-colors">Philosophy</a>
-            <a href="#protocol" className="hover:text-accent transition-colors">Protocol</a>
+            <Link
+              to="/"
+              className="hover:text-accent transition-colors"
+              onClick={e => {
+                if (location.pathname === "/") {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+            >
+              Home
+            </Link>
+            <a
+              href="#features"
+              className="hover:text-accent transition-colors"
+              onClick={e => {
+                e.preventDefault();
+                if (location.pathname !== "/") {
+                  sessionStorage.setItem('scrollToHash', '#features');
+                  window.location.href = '/';
+                } else {
+                  window.location.hash = '#features';
+                }
+              }}
+            >Features</a>
+            <a
+              href="#philosophy"
+              className="hover:text-accent transition-colors"
+              onClick={e => {
+                e.preventDefault();
+                if (location.pathname !== "/") {
+                  sessionStorage.setItem('scrollToHash', '#philosophy');
+                  window.location.href = '/';
+                } else {
+                  window.location.hash = '#philosophy';
+                }
+              }}
+            >Philosophy</a>
+            <a
+              href="#protocol"
+              className="hover:text-accent transition-colors"
+              onClick={e => {
+                e.preventDefault();
+                if (location.pathname !== "/") {
+                  sessionStorage.setItem('scrollToHash', '#protocol');
+                  window.location.href = '/';
+                } else {
+                  window.location.hash = '#protocol';
+                }
+              }}
+            >Protocol</a>
           </div>
           {/* Contact button moved to top right, so removed from here */}
           <button className="md:hidden p-2" onClick={handleMobileMenuToggle} aria-label="Open menu">
@@ -76,11 +135,75 @@ export default function Navbar() {
           onClick={e => e.stopPropagation()}
         >
           <div className="bg-white rounded-2xl shadow-xl flex flex-col px-6 py-4 gap-1">
-            <Link to="/" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Home</Link>
-            <a href="#features" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Features</a>
-            <a href="#philosophy" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Philosophy</a>
-            <a href="#protocol" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Protocol</a>
-            <a href="#contact" className="mt-2 magnetic-btn magnetic-btn-accent px-4 py-2 text-sm flex items-center justify-center" onClick={handleMobileMenuClose}>
+            <Link
+              to="/"
+              className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2"
+              onClick={e => {
+                handleMobileMenuClose();
+                if (location.pathname === "/") {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+            >
+              Home
+            </Link>
+            <a
+              href="#features"
+              className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2"
+              onClick={e => {
+                e.preventDefault();
+                handleMobileMenuClose();
+                if (location.pathname !== "/") {
+                  sessionStorage.setItem('scrollToHash', '#features');
+                  window.location.href = '/';
+                } else {
+                  window.location.hash = '#features';
+                }
+              }}
+            >Features</a>
+            <a
+              href="#philosophy"
+              className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2"
+              onClick={e => {
+                e.preventDefault();
+                handleMobileMenuClose();
+                if (location.pathname !== "/") {
+                  sessionStorage.setItem('scrollToHash', '#philosophy');
+                  window.location.href = '/';
+                } else {
+                  window.location.hash = '#philosophy';
+                }
+              }}
+            >Philosophy</a>
+            <a
+              href="#protocol"
+              className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2"
+              onClick={e => {
+                e.preventDefault();
+                handleMobileMenuClose();
+                if (location.pathname !== "/") {
+                  sessionStorage.setItem('scrollToHash', '#protocol');
+                  window.location.href = '/';
+                } else {
+                  window.location.hash = '#protocol';
+                }
+              }}
+            >Protocol</a>
+            <a
+              href="#contact"
+              className="mt-2 magnetic-btn magnetic-btn-accent px-4 py-2 text-sm flex items-center justify-center"
+              onClick={e => {
+                e.preventDefault();
+                handleMobileMenuClose();
+                if (location.pathname !== "/") {
+                  sessionStorage.setItem('scrollToHash', '#contact');
+                  window.location.href = '/';
+                } else {
+                  window.location.hash = '#contact';
+                }
+              }}
+            >
               <span>Contact</span>
             </a>
           </div>

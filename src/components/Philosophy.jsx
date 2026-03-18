@@ -231,8 +231,8 @@ export default function Philosophy() {
       if (foodRef.current.radius > 0) {
         boidsCtx.beginPath();
         boidsCtx.arc(foodRef.current.x, foodRef.current.y, foodRef.current.radius, 0, Math.PI * 2);
-        boidsCtx.fillStyle = '#22c55e';
-        boidsCtx.shadowColor = '#22c55e';
+        boidsCtx.fillStyle = '#F3E9FF';
+        boidsCtx.shadowColor = '#a855f7';
         boidsCtx.shadowBlur = 15;
         boidsCtx.fill();
         boidsCtx.closePath();
