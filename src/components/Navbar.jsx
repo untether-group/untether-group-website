@@ -20,6 +20,12 @@ export default function Navbar() {
           <span>Contact</span>
         </a>
       </div>
+      {/* Mobile Contact button to the right of navbar */}
+      <div className="block md:hidden fixed top-6 right-4 z-[110]">
+        <a href="#contact" className="magnetic-btn magnetic-btn-accent px-3 py-1 text-xs flex items-center justify-center">
+          <span>Contact</span>
+        </a>
+      </div>
       <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-[600px]">
         <div 
           className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] gap-x-12 ${
