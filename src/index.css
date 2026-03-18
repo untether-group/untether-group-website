@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-dark antialiased;
+  }
+}
+
+@layer utilities {
+  .magnetic-btn {
+    @apply relative overflow-hidden transition-all duration-300 ease-out inline-flex items-center justify-center;
+  }
+  
+  .magnetic-btn:hover {
+    transform: scale(1.03) translateY(-1px);
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .magnetic-btn::before {
+    content: '';
+    @apply absolute inset-0 bg-dark translate-y-full transition-transform duration-300 ease-out z-0;
+  }
+  
+  .magnetic-btn:hover::before {
+    @apply bg-dark translate-y-0;
+  }
+  
+  .magnetic-btn-accent {
+    @apply bg-accent text-primary rounded-full px-8 py-4 font-sans font-bold text-sm tracking-widest uppercase;
+  }
+  
+  .magnetic-btn-accent span {
+    @apply relative z-10 transition-colors duration-300;
+  }
+  
+  .magnetic-btn-accent:hover span {
+    @apply text-primary;
+  }
+  
+  /* Text utilities */
+  .tracking-tighter {
+    letter-spacing: -0.04em;
+  }
+  
+  .glass-nav {
+    @apply bg-surface/60 backdrop-blur-xl border border-dark/10 shadow-sm;
+  }
+}
