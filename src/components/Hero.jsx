@@ -5,7 +5,7 @@ export default function Hero() {
   const containerRef = useRef(null);
 
   const handleScrollToNextSection = () => {
-    const nextSection = document.getElementById('features-section');
+    const nextSection = document.getElementById('features');
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
