@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -27,10 +28,10 @@ export default function Footer() {
         <div>
           <h4 className="font-mono text-xs uppercase tracking-widest text-primary/40 mb-6">Legal</h4>
           <ul className="space-y-4 font-sans font-medium text-sm">
-            <li><a href="#/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
-            <li><a href="#/terms" className="hover:text-accent transition-colors">Terms of Services</a></li>
-            <li><a href="#/website-terms" className="hover:text-accent transition-colors">Terms of Website</a></li>
-            <li><a href="#/cookies" className="hover:text-accent transition-colors">Cookie Manifest</a></li>
+            <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
+            <li><Link to="/terms-of-services" className="hover:text-accent transition-colors">Terms of Services</Link></li>
+            <li><Link to="/terms-of-website" className="hover:text-accent transition-colors">Terms of Website</Link></li>
+            <li><Link to="/cookie-manifest" className="hover:text-accent transition-colors">Cookie Manifest</Link></li>
           </ul>
         </div>
       </div>

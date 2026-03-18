@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -7,76 +7,37 @@ import Philosophy from './components/Philosophy';
 import Protocol from './components/Protocol';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
-
-
 import PrivacyPolicy from './components/PrivacyPolicy';
 import CookiePolicy from './components/CookiePolicy';
-
 import TermsServices from './components/TermsServices';
 import TermsWebsite from './components/TermsWebsite';
 
 function App() {
-  const [route, setRoute] = useState(window.location.hash);
-
-  React.useEffect(() => {
-    const onHashChange = () => setRoute(window.location.hash);
-    window.addEventListener('hashchange', onHashChange);
-    return () => window.removeEventListener('hashchange', onHashChange);
-  }, []);
-
-
-
-
-  if (route === '#/privacy') {
-    return (
-      <div className="w-full bg-surface text-dark font-sans relative">
-        <Navbar />
-        <PrivacyPolicy />
-        <Footer />
-      </div>
-    );
-  }
-
-  if (route === '#/cookies') {
-    return (
-      <div className="w-full bg-surface text-dark font-sans relative">
-        <Navbar />
-        <CookiePolicy />
-        <Footer />
-      </div>
-    );
-  }
-
-  if (route === '#/terms') {
-    return (
-      <div className="w-full bg-surface text-dark font-sans relative">
-        <Navbar />
-        <TermsServices />
-        <Footer />
-      </div>
-    );
-  }
-
-  if (route === '#/website-terms') {
-    return (
-      <div className="w-full bg-surface text-dark font-sans relative">
-        <Navbar />
-        <TermsWebsite />
-        <Footer />
-      </div>
-    );
-  }
-
   return (
-    <div className="w-full bg-surface text-dark font-sans relative">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Philosophy />
-      <Protocol />
-      <CTA />
-      <Footer />
-    </div>
+    <Router>
+      <div className="w-full bg-surface text-dark font-sans relative min-h-screen flex flex-col">
+        <Navbar />
+        <Routes>
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/cookie-manifest" element={<CookiePolicy />} />
+          <Route path="/terms-of-services" element={<TermsServices />} />
+          <Route path="/terms-of-website" element={<TermsWebsite />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Features />
+                <Philosophy />
+                <Protocol />
+                <CTA />
+              </>
+            }
+          />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
