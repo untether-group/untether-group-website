@@ -5,7 +5,7 @@ export default function Hero() {
   const containerRef = useRef(null);
 
   const handleScrollToNextSection = () => {
-    const nextSection = document.getElementById('features-section');
+    const nextSection = document.getElementById('features');
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -41,24 +41,24 @@ export default function Hero() {
       ></iframe>
 
       {/* Content */}
-      <div className="relative z-10 w-full h-full flex flex-col justify-end p-8 md:p-16 lg:p-24 pb-20 pointer-events-none">
-        <div className="max-w-4xl text-primary">
-          <h1 className="flex flex-col gap-2">
-            <span className="hero-text font-sans font-bold text-4xl md:text-5xl lg:text-6xl tracking-tighter uppercase whitespace-nowrap text-primary" style={{ pointerEvents: 'none' }}>
+      <div className="relative z-10 w-full h-full flex flex-col justify-end p-4 landscape:p-3 md:p-16 lg:p-24 pb-10 landscape:pb-3 md:pb-20 pointer-events-none">
+        <div className="max-w-4xl text-primary pl-4 md:pl-16 lg:pl-24 pb-3 md:pb-4 lg:pb-8">
+          <h1 className="flex flex-col gap-2 landscape:gap-0">
+            <span className="hero-text font-sans font-bold text-xl max-md:landscape:text-sm md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl tracking-tighter uppercase whitespace-nowrap text-primary" style={{ pointerEvents: 'none' }}>
               Experience
             </span>
-            <span className="hero-text font-drama italic text-7xl md:text-8xl lg:text-[9rem] leading-none text-primary/90 block -ml-2" style={{ pointerEvents: 'none' }}>
+            <span className="hero-text font-drama italic text-[2.5rem] max-md:landscape:text-[1.4rem] md:text-8xl lg:text-[9rem] xl:text-[10rem] 2xl:text-[11rem] leading-none text-primary/90 block -ml-1 max-md:landscape:ml-0 md:-ml-2" style={{ pointerEvents: 'none' }}>
               Living Systems
             </span>
           </h1>
-          <p className="hero-text mt-8 text-lg font-sans text-primary/70 max-w-xl" style={{ pointerEvents: 'none' }}>
+          <p className="hero-text mt-3 md:mt-8 text-xs max-md:landscape:text-xs md:text-lg lg:text-xl font-sans text-primary/70 max-w-xl" style={{ pointerEvents: 'none' }}>
             A playful window into a world of characters that respond to your presence and actions.
           </p>
-          <div className="hero-btn mt-12">
+          {/* <div className="hero-btn mt-5 landscape:mt-2 md:mt-12">
             <a href="#contact" className="magnetic-btn magnetic-btn-accent group">
               <span>Contact &rarr;</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -10,9 +10,12 @@ export default function CTA() {
         <p className="font-mono text-sm md:text-base text-dark/70 max-w-xl mx-auto mb-12 uppercase tracking-wide">
           Deploy an untethered living landscape in your environment.
         </p>
-        <a href="mailto:contact@untether.com" className="magnetic-btn magnetic-btn-accent text-lg px-12 py-6">
+        <a href="mailto:hello@untether.group" className="magnetic-btn magnetic-btn-accent text-lg px-12 py-6">
           <span>Contact Us &rarr;</span>
         </a>
+        <p className="font-mono text-sm md:text-base text-dark/70 max-w-xl mx-auto mb-12 py-6 tracking-wide">
+          hello@untether.group
+        </p>
       </div>
     </section>
   );
