@@ -1,9 +1,13 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
+
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +16,11 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
 
   const handleMobileMenuToggle = () => setMobileMenuOpen((open) => !open);
   const handleMobileMenuClose = () => setMobileMenuOpen(false);
@@ -36,7 +45,7 @@ export default function Navbar() {
             untether.
           </div>
           <div className="hidden md:flex items-center space-x-8 text-sm font-sans font-medium">
-            <a href="" className="hover:text-accent transition-colors">Home</a>
+            <Link to="/" className="hover:text-accent transition-colors">Home</Link>
             <a href="#features" className="hover:text-accent transition-colors">Features</a>
             <a href="#philosophy" className="hover:text-accent transition-colors">Philosophy</a>
             <a href="#protocol" className="hover:text-accent transition-colors">Protocol</a>
@@ -67,7 +76,7 @@ export default function Navbar() {
           onClick={e => e.stopPropagation()}
         >
           <div className="bg-white rounded-2xl shadow-xl flex flex-col px-6 py-4 gap-1">
-            <a href="" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Home</a>
+            <Link to="/" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Home</Link>
             <a href="#features" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Features</a>
             <a href="#philosophy" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Philosophy</a>
             <a href="#protocol" className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2" onClick={handleMobileMenuClose}>Protocol</a>
