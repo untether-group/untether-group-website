@@ -7,13 +7,7 @@ import Philosophy from './components/Philosophy';
 import Protocol from './components/Protocol';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
-
-
 import PrivacyPolicy from './components/PrivacyPolicy';
-import CookiePolicy from './components/CookiePolicy';
-
-import TermsServices from './components/TermsServices';
-import TermsWebsite from './components/TermsWebsite';
 
 function App() {
   const [route, setRoute] = useState(window.location.hash);
@@ -24,44 +18,11 @@ function App() {
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
 
-
-
-
   if (route === '#/privacy') {
     return (
       <div className="w-full bg-surface text-dark font-sans relative">
         <Navbar />
         <PrivacyPolicy />
-        <Footer />
-      </div>
-    );
-  }
-
-  if (route === '#/cookies') {
-    return (
-      <div className="w-full bg-surface text-dark font-sans relative">
-        <Navbar />
-        <CookiePolicy />
-        <Footer />
-      </div>
-    );
-  }
-
-  if (route === '#/terms') {
-    return (
-      <div className="w-full bg-surface text-dark font-sans relative">
-        <Navbar />
-        <TermsServices />
-        <Footer />
-      </div>
-    );
-  }
-
-  if (route === '#/website-terms') {
-    return (
-      <div className="w-full bg-surface text-dark font-sans relative">
-        <Navbar />
-        <TermsWebsite />
         <Footer />
       </div>
     );
