@@ -13,14 +13,21 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-[600px]">
-      <div 
-        className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] gap-x-12 ${
-          scrolled 
-            ? 'glass-nav text-dark' 
-            : 'bg-transparent text-primary'
-        }`}
-      >
+    <>
+      {/* Desktop Contact button in top right */}
+      <div className="hidden md:block fixed top-6 right-8 z-[110]">
+        <a href="#contact" className="magnetic-btn magnetic-btn-accent px-4 py-1 text-xs flex items-center justify-center">
+          <span>Contact</span>
+        </a>
+      </div>
+      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-[600px]">
+        <div 
+          className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] gap-x-12 ${
+            scrolled 
+              ? 'glass-nav text-dark' 
+              : 'bg-transparent text-primary'
+          }`}
+        >
         <div className="font-sans font-bold tracking-tighter text-xl">
           untether.
         </div>
@@ -32,16 +39,13 @@ export default function Navbar() {
           <a href="#protocol" className="hover:text-accent transition-colors">Protocol</a>
         </div>
         
-        <div className="hidden md:block">
-          <a href="#contact" className="magnetic-btn magnetic-btn-accent px-3 py-2 text-xs">
-            <span>Contact</span>
-          </a>
-        </div>
+        {/* Contact button moved to top right, so removed from here */}
 
         <button className="md:hidden p-2">
           <Menu size={20} className={scrolled ? 'text-dark' : 'text-primary'} />
         </button>
       </div>
-    </nav>
+      </nav>
+    </>
   );
 }
