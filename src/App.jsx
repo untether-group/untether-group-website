@@ -40,22 +40,22 @@ function App() {
         <Navbar />
         <ScrollToHashOnLoad />
         <Routes>
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/cookie-manifest" element={<CookiePolicy />} />
-          <Route path="/terms-of-services" element={<TermsServices />} />
-          <Route path="/terms-of-website" element={<TermsWebsite />} />
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero />
-                <Features />
-                <Philosophy />
-                <Protocol />
-                <CTA />
-              </>
-            }
-          />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/cookie-manifest" element={<CookiePolicy />} />
+            <Route path="/terms-of-services" element={<TermsServices />} />
+            <Route path="/terms-of-website" element={<TermsWebsite />} />
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <Features />
+                  <Philosophy />
+                  <Protocol />
+                  <CTA />
+                </>
+              }
+            />
         </Routes>
         <Footer />
       </div>
