@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Features from './components/Features';
+import Companies from './components/Companies';
 import Philosophy from './components/Philosophy';
 import Protocol from './components/Protocol';
 import CTA from './components/CTA';
@@ -49,7 +49,7 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <Features />
+                  <Companies />
                   <Philosophy />
                   <Protocol />
                   <CTA />

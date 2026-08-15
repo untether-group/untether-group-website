@@ -70,18 +70,18 @@ export default function Navbar() {
               Home
             </Link>
             <a
-              href="#features"
+              href="#companies"
               className="hover:text-accent transition-colors"
               onClick={e => {
                 e.preventDefault();
                 if (location.pathname !== "/") {
-                  sessionStorage.setItem('scrollToHash', '#features');
+                  sessionStorage.setItem('scrollToHash', '#companies');
                   window.location.href = '/';
                 } else {
-                  window.location.hash = '#features';
+                  window.location.hash = '#companies';
                 }
               }}
-            >Features</a>
+            >Companies</a>
             <a
               href="#philosophy"
               className="hover:text-accent transition-colors"
@@ -149,19 +149,19 @@ export default function Navbar() {
               Home
             </Link>
             <a
-              href="#features"
+              href="#companies"
               className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2"
               onClick={e => {
                 e.preventDefault();
                 handleMobileMenuClose();
                 if (location.pathname !== "/") {
-                  sessionStorage.setItem('scrollToHash', '#features');
+                  sessionStorage.setItem('scrollToHash', '#companies');
                   window.location.href = '/';
                 } else {
-                  window.location.hash = '#features';
+                  window.location.hash = '#companies';
                 }
               }}
-            >Features</a>
+            >Companies</a>
             <a
               href="#philosophy"
               className="text-base font-sans font-bold text-dark hover:text-accent transition-colors py-2"

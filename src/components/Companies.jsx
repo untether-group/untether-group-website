@@ -160,7 +160,7 @@ const SchedulerCard = () => {
   );
 };
 
-export default function Features() {
+export default function Companies() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -181,10 +181,10 @@ export default function Features() {
   }, []);
 
   return (
-    <section id="features" ref={sectionRef} className="px-6 py-24 md:px-16 lg:px-24 bg-primary mx-auto max-w-[1400px]">
+    <section id="companies" ref={sectionRef} className="px-6 py-24 md:px-16 lg:px-24 bg-primary mx-auto max-w-[1400px]">
       <div className="mb-16">
         <h2 className="font-sans font-bold text-4xl md:text-5xl tracking-tighter uppercase">
-          Interactive Artworks
+          Companies
         </h2>
         <p className="font-mono text-sm mt-4 text-dark/60 max-w-md">
           Three systems drive the Untether experience: Interaction, software, and world building. Our artworks evolve and react to human presence, creating an immersive experience.

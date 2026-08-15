@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Features from './components/Features';
+import Companies from './components/Companies';
 import Philosophy from './components/Philosophy';
 import Protocol from './components/Protocol';
 import CTA from './components/CTA';
@@ -32,7 +32,7 @@ function App() {
     <div className="w-full bg-surface text-dark font-sans relative">
       <Navbar />
       <Hero />
-      <Features />
+      <Companies />
       <Philosophy />
       <Protocol />
       <CTA />
