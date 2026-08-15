@@ -112,7 +112,9 @@ const CompanyLogoCard = ({ name, logo }) => (
         className="max-h-full max-w-full h-full w-auto object-contain"
       />
     </div>
-    <span className="font-mono text-xs uppercase tracking-tighter text-dark/60 mt-4">{name}</span>
+    <p className="font-mono text-xs text-dark/60 mt-4 text-center">
+      A leading studio crafting interactive and immersive experiences.
+    </p>
   </div>
 );
 
