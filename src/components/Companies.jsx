@@ -87,7 +87,7 @@ const CompanyLogoCard = ({ name, logo }) => (
         className="max-h-full max-w-full h-full w-auto object-contain"
       />
     </div>
-    <p className="font-mono text-xs text-dark/60 mt-4 text-left">
+    <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
       A leading studio crafting interactive and immersive experiences.
     </p>
   </div>
@@ -110,11 +110,11 @@ const UberactCard = () => {
           className="max-h-full max-w-full h-full w-auto object-contain"
         />
       </div>
-      <p className="font-mono text-xs text-dark/60 mt-4 text-left">
+      <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
         A leading studio crafting interactive and immersive experiences.
       </p>
-      <p className="mt-2">
-      <a href="https://uberact.com/">https://uberact.com</a>
+      <p className="mt-2 w-full text-left">
+        <a href="https://uberact.com/">https://uberact.com</a>
       </p>
       <div className="w-full mt-4">
         <TypewriterTerminal messages={messages} />
@@ -185,10 +185,10 @@ const RelentlessGamesCard = () => (
         className="max-h-full max-w-full h-full w-auto object-contain"
       />
     </div>
-    <p className="font-mono text-xs text-dark/60 mt-4 text-left">
+    <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
       A leading studio crafting interactive and immersive experiences.
     </p>
-    <p className="mt-2">
+    <p className="mt-2 w-full text-left">
       <a href="https://relentless.games/">https://relentless.games</a>
     </p>
     <div className="w-full mt-4">
@@ -206,10 +206,10 @@ const UntetherStudioCard = () => (
         className="max-h-full max-w-full h-full w-auto object-contain"
       />
     </div>
-    <p className="font-mono text-xs text-dark/60 mt-4 text-left">
+    <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
       A leading studio crafting interactive and immersive experiences.
     </p>
-        <p className="mt-2">
+    <p className="mt-2 w-full text-left">
       <a href="https://untether.studio/">https://untether.studio</a>
     </p>
     <div className="w-full mt-4">
