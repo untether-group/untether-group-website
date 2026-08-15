@@ -45,18 +45,6 @@ const Shuffler = () => {
   );
 };
 
-const ShufflerCard = () => (
-  <div className="relative w-full h-[320px] bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col justify-between overflow-hidden">
-    <div className="z-20">
-      <h3 className="font-sans font-bold text-xl uppercase tracking-tighter">Living Landscapes</h3>
-      <p className="font-mono text-xs text-dark/60 mt-2">World building: Unique and highly immersive environments</p>
-    </div>
-    <div className="mt-auto">
-      <Shuffler />
-    </div>
-  </div>
-);
-
 const TypewriterTerminal = ({ messages }) => {
   const [text, setText] = useState('');
   const [msgIndex, setMsgIndex] = useState(0);
@@ -86,34 +74,6 @@ const TypewriterTerminal = ({ messages }) => {
         {text}
         <span className="inline-block w-2 h-3 bg-accent ml-1 animate-pulse"></span>
       </p>
-    </div>
-  );
-};
-
-const TypewriterCard = () => {
-  const messages = [
-    "INITIALIZING SENSORS...",
-    "DETECTING PRESENCE...",
-    "ADJUSTING LIGHT LEVELS...",
-    "ENVIRONMENT SYNCED."
-  ];
-
-  return (
-    <div className="relative w-full h-[320px] bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col">
-      <div className="flex justify-between items-start z-20">
-        <div>
-          <h3 className="font-sans font-bold text-xl uppercase tracking-tighter">Sensory-Reactive</h3>
-          <p className="font-mono text-xs text-dark/60 mt-2">Interactive: Art that responds to human presence</p>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full bg-accent animate-pulse"></div>
-          <span className="font-mono text-[10px] uppercase font-bold text-accent">Live Feed</span>
-        </div>
-      </div>
-      
-      <div className="mt-auto">
-        <TypewriterTerminal messages={messages} />
-      </div>
     </div>
   );
 };
@@ -213,18 +173,6 @@ const Scheduler = () => {
   );
 };
 
-const SchedulerCard = () => (
-  <div className="relative w-full h-[320px] bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col">
-    <div className="z-20">
-      <h3 className="font-sans font-bold text-xl uppercase tracking-tighter">Immersion</h3>
-      <p className="font-mono text-xs text-dark/60 mt-2">Software: AI tools used by highly skilled and experienced humans</p>
-    </div>
-    <div className="mt-auto">
-      <Scheduler />
-    </div>
-  </div>
-);
-
 const RelentlessGamesCard = () => (
   <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center">
     <div className="h-24 w-full flex items-center justify-center">
@@ -304,17 +252,6 @@ export default function Companies() {
         </div>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="feature-card">
-          <TypewriterCard />
-        </div>
-        <div className="feature-card">
-          <SchedulerCard />
-        </div>
-        <div className="feature-card">
-          <ShufflerCard />
-        </div>
-      </div>
     </section>
   );
 }
