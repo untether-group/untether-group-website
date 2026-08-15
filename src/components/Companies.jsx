@@ -102,7 +102,7 @@ const UberactCard = () => {
   ];
 
   return (
-    <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px]">
+    <a href="https://uberact.com/" target="_blank" rel="noopener noreferrer" className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px] cursor-pointer">
       <div className="h-24 w-full flex items-center justify-center">
         <img
           src={uberactLogo}
@@ -114,12 +114,12 @@ const UberactCard = () => {
         A leading studio crafting interactive and immersive experiences.
       </p>
       <p className="mt-2 w-full text-left">
-        <a href="https://uberact.com/">https://uberact.com</a>
+        https://uberact.com
       </p>
       <div className="w-full mt-4">
         <TypewriterTerminal messages={messages} />
       </div>
-    </div>
+    </a>
   );
 };
 
@@ -177,7 +177,7 @@ const Scheduler = () => {
 };
 
 const RelentlessGamesCard = () => (
-  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px]">
+  <a href="https://relentless.games/" target="_blank" rel="noopener noreferrer" className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px] cursor-pointer">
     <div className="h-24 w-full flex items-center justify-center">
       <img
         src={relentlessGamesLogo}
@@ -189,16 +189,16 @@ const RelentlessGamesCard = () => (
       A leading studio crafting interactive and immersive experiences.
     </p>
     <p className="mt-2 w-full text-left">
-      <a href="https://relentless.games/">https://relentless.games</a>
+      https://relentless.games
     </p>
     <div className="w-full mt-4">
       <Scheduler />
     </div>
-  </div>
+  </a>
 );
 
 const UntetherStudioCard = () => (
-  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px]">
+  <a href="https://untether.studio/" target="_blank" rel="noopener noreferrer" className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px] cursor-pointer">
     <div className="h-24 w-full flex items-center justify-center">
       <img
         src={untetherStudioLogo}
@@ -210,12 +210,12 @@ const UntetherStudioCard = () => (
       A leading studio crafting interactive and immersive experiences.
     </p>
     <p className="mt-2 w-full text-left">
-      <a href="https://untether.studio/">https://untether.studio</a>
+      https://untether.studio
     </p>
     <div className="w-full mt-4">
       <Shuffler />
     </div>
-  </div>
+  </a>
 );
 
 export default function Companies() {
