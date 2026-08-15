@@ -51,13 +51,7 @@ const ShufflerCard = () => {
   );
 };
 
-const TypewriterCard = () => {
-  const messages = [
-    "INITIALIZING SENSORS...",
-    "DETECTING PRESENCE...",
-    "ADJUSTING LIGHT LEVELS...",
-    "ENVIRONMENT SYNCED."
-  ];
+const TypewriterTerminal = ({ messages }) => {
   const [text, setText] = useState('');
   const [msgIndex, setMsgIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -77,7 +71,26 @@ const TypewriterCard = () => {
       }, 2000);
       return () => clearTimeout(timeout);
     }
-  }, [charIndex, msgIndex]);
+  }, [charIndex, msgIndex, messages]);
+
+  return (
+    <div className="bg-dark rounded-xl p-4 min-h-[100px] border border-dark/20 flex items-start">
+      <p className="font-mono text-xs text-primary leading-relaxed">
+        <span className="text-accent mr-2">{'>'}</span>
+        {text}
+        <span className="inline-block w-2 h-3 bg-accent ml-1 animate-pulse"></span>
+      </p>
+    </div>
+  );
+};
+
+const TypewriterCard = () => {
+  const messages = [
+    "INITIALIZING SENSORS...",
+    "DETECTING PRESENCE...",
+    "ADJUSTING LIGHT LEVELS...",
+    "ENVIRONMENT SYNCED."
+  ];
 
   return (
     <div className="relative w-full h-[320px] bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col">
@@ -92,12 +105,8 @@ const TypewriterCard = () => {
         </div>
       </div>
       
-      <div className="mt-auto bg-dark rounded-xl p-4 min-h-[100px] border border-dark/20 flex items-start">
-        <p className="font-mono text-xs text-primary leading-relaxed">
-          <span className="text-accent mr-2">{'>'}</span>
-          {text}
-          <span className="inline-block w-2 h-3 bg-accent ml-1 animate-pulse"></span>
-        </p>
+      <div className="mt-auto">
+        <TypewriterTerminal messages={messages} />
       </div>
     </div>
   );
@@ -117,6 +126,33 @@ const CompanyLogoCard = ({ name, logo }) => (
     </p>
   </div>
 );
+
+const UberactCard = () => {
+  const messages = [
+    "INITIALIZING UBERACT...",
+    "CONNECTING SYSTEMS...",
+    "MAPPING INTERACTIONS...",
+    "UBERACT READY."
+  ];
+
+  return (
+    <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center">
+      <div className="h-24 w-full flex items-center justify-center">
+        <img
+          src={uberactLogo}
+          alt="Uberact logo"
+          className="max-h-full max-w-full h-full w-auto object-contain"
+        />
+      </div>
+      <p className="font-mono text-xs text-dark/60 mt-4 text-center">
+        A leading studio crafting interactive and immersive experiences.
+      </p>
+      <div className="w-full mt-4">
+        <TypewriterTerminal messages={messages} />
+      </div>
+    </div>
+  );
+};
 
 const SchedulerCard = () => {
   const containerRef = useRef(null);
@@ -211,7 +247,7 @@ export default function Companies() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
         <div className="feature-card">
-          <CompanyLogoCard name="Uberact" logo={uberactLogo} />
+          <UberactCard />
         </div>
         <div className="feature-card">
           <CompanyLogoCard name="Relentless Games" logo={relentlessGamesLogo} />
