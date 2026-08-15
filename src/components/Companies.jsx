@@ -154,7 +154,7 @@ const UberactCard = () => {
   );
 };
 
-const SchedulerCard = () => {
+const Scheduler = () => {
   const containerRef = useRef(null);
   const cursorRef = useRef(null);
   const days = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
@@ -180,39 +180,62 @@ const SchedulerCard = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-full h-[320px] bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col">
-      <div className="z-20">
-        <h3 className="font-sans font-bold text-xl uppercase tracking-tighter">Immersion</h3>
-        <p className="font-mono text-xs text-dark/60 mt-2">Software: AI tools used by highly skilled and experienced humans</p>
+    <div ref={containerRef} className="relative w-full">
+      <div className="grid grid-cols-7 gap-2 mb-4">
+        {days.map((day, i) => (
+          <div 
+            key={i} 
+            className={`aspect-square rounded-lg border flex items-center justify-center font-mono text-xs transition-colors duration-300 ${
+              activeDay === i ? 'bg-accent text-primary border-accent' : 'border-dark/10 text-dark/40 bg-white/50'
+            }`}
+          >
+            {day}
+          </div>
+        ))}
       </div>
-      
-      <div className="mt-auto relative">
-        <div className="grid grid-cols-7 gap-2 mb-4">
-          {days.map((day, i) => (
-            <div 
-              key={i} 
-              className={`aspect-square rounded-lg border flex items-center justify-center font-mono text-xs transition-colors duration-300 ${
-                activeDay === i ? 'bg-accent text-primary border-accent' : 'border-dark/10 text-dark/40 bg-white/50'
-              }`}
-            >
-              {day}
-            </div>
-          ))}
-        </div>
-        <div className="w-full flex justify-end">
-          <button className="bg-dark text-primary font-mono text-[10px] uppercase px-4 py-2 rounded-lg get-save-btn">
-            Compile
-          </button>
-        </div>
+      <div className="w-full flex justify-end">
+        <button className="bg-dark text-primary font-mono text-[10px] uppercase px-4 py-2 rounded-lg get-save-btn">
+          Compile
+        </button>
+      </div>
 
-        {/* Animated Cursor */}
-        <div ref={cursorRef} className="absolute top-0 left-0 z-50 pointer-events-none drop-shadow-md text-dark">
-          <MousePointer2 size={24} fill="currentColor" />
-        </div>
+      {/* Animated Cursor */}
+      <div ref={cursorRef} className="absolute top-0 left-0 z-50 pointer-events-none drop-shadow-md text-dark">
+        <MousePointer2 size={24} fill="currentColor" />
       </div>
     </div>
   );
 };
+
+const SchedulerCard = () => (
+  <div className="relative w-full h-[320px] bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col">
+    <div className="z-20">
+      <h3 className="font-sans font-bold text-xl uppercase tracking-tighter">Immersion</h3>
+      <p className="font-mono text-xs text-dark/60 mt-2">Software: AI tools used by highly skilled and experienced humans</p>
+    </div>
+    <div className="mt-auto">
+      <Scheduler />
+    </div>
+  </div>
+);
+
+const RelentlessGamesCard = () => (
+  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center">
+    <div className="h-24 w-full flex items-center justify-center">
+      <img
+        src={relentlessGamesLogo}
+        alt="Relentless Games logo"
+        className="max-h-full max-w-full h-full w-auto object-contain"
+      />
+    </div>
+    <p className="font-mono text-xs text-dark/60 mt-4 text-center">
+      A leading studio crafting interactive and immersive experiences.
+    </p>
+    <div className="w-full mt-4">
+      <Scheduler />
+    </div>
+  </div>
+);
 
 export default function Companies() {
   const sectionRef = useRef(null);
@@ -250,7 +273,7 @@ export default function Companies() {
           <UberactCard />
         </div>
         <div className="feature-card">
-          <CompanyLogoCard name="Relentless Games" logo={relentlessGamesLogo} />
+          <RelentlessGamesCard />
         </div>
         <div className="feature-card">
           <CompanyLogoCard name="Untether Studio" logo={untetherStudioLogo} />
