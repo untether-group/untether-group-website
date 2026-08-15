@@ -52,7 +52,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="hero-text mt-3 md:mt-8 text-xs max-md:landscape:text-xs md:text-lg lg:text-xl font-sans text-primary/70 max-w-xl" style={{ pointerEvents: 'none' }}>
-            A group of companies focused on software and creative human interaction.
+            A group of companies focused on creating highly interactive experiences.
           </p>
           {/* <div className="hero-btn mt-5 landscape:mt-2 md:mt-12">
             <a href="#contact" className="magnetic-btn magnetic-btn-accent group">

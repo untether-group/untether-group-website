@@ -10,8 +10,7 @@ export default function Footer() {
             untether.
           </div>
           <p className="font-mono text-sm text-primary/50 max-w-xs">
-            Interactive digital art that evolves with you. 
-            Dissolving the digital divide.
+            Companies focused on creating highly interactive experiences.
           </p>
         </div>
         

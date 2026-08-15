@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { MousePointer2 } from 'lucide-react';
+import uberactLogo from '../assets/company-logos/uberact-logotype.svg';
+import relentlessGamesLogo from '../assets/company-logos/relentless-games-logo.svg';
+import untetherStudioLogo from '../assets/company-logos/untether-studio-logo.svg';
 
 const ShufflerCard = () => {
   const [cards, setCards] = useState([
@@ -100,6 +103,19 @@ const TypewriterCard = () => {
   );
 };
 
+const CompanyLogoCard = ({ name, logo }) => (
+  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center">
+    <div className="h-24 w-full flex items-center justify-center">
+      <img
+        src={logo}
+        alt={`${name} logo`}
+        className="max-h-full max-w-full h-full w-auto object-contain"
+      />
+    </div>
+    <span className="font-mono text-xs uppercase tracking-tighter text-dark/60 mt-4">{name}</span>
+  </div>
+);
+
 const SchedulerCard = () => {
   const containerRef = useRef(null);
   const cursorRef = useRef(null);
@@ -189,6 +205,18 @@ export default function Companies() {
         <p className="font-mono text-sm mt-4 text-dark/60 max-w-md">
           Three systems drive the Untether experience: Interaction, software, and world building. Our artworks evolve and react to human presence, creating an immersive experience.
         </p>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+        <div className="feature-card">
+          <CompanyLogoCard name="Uberact" logo={uberactLogo} />
+        </div>
+        <div className="feature-card">
+          <CompanyLogoCard name="Relentless Games" logo={relentlessGamesLogo} />
+        </div>
+        <div className="feature-card">
+          <CompanyLogoCard name="Untether Studio" logo={untetherStudioLogo} />
+        </div>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
