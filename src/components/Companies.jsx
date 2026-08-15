@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { MousePointer2 } from 'lucide-react';
+import { MousePointer2, Gamepad2, Swords, Trophy, Target, Shield, Crown, Zap } from 'lucide-react';
 import uberactLogo from '../assets/company-logos/uberact-logotype.svg';
 import relentlessGamesLogo from '../assets/company-logos/relentless-games-logo.svg';
 import untetherStudioLogo from '../assets/company-logos/untether-studio-logo.svg';
@@ -113,6 +113,9 @@ const UberactCard = () => {
       <p className="font-mono text-xs text-dark/60 mt-4 text-center">
         A leading studio crafting interactive and immersive experiences.
       </p>
+          <p className="mt-2">
+      <a href="https://uberact.com/">https://uberact.com</a>
+    </p>
       <div className="w-full mt-4">
         <TypewriterTerminal messages={messages} />
       </div>
@@ -123,7 +126,7 @@ const UberactCard = () => {
 const Scheduler = () => {
   const containerRef = useRef(null);
   const cursorRef = useRef(null);
-  const days = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+  const days = [Gamepad2, Swords, Trophy, Target, Shield, Crown, Zap];
   const [activeDay, setActiveDay] = useState(-1);
 
   useEffect(() => {
@@ -148,14 +151,14 @@ const Scheduler = () => {
   return (
     <div ref={containerRef} className="relative w-full">
       <div className="grid grid-cols-7 gap-2 mb-4">
-        {days.map((day, i) => (
+        {days.map((Icon, i) => (
           <div 
             key={i} 
             className={`aspect-square rounded-lg border flex items-center justify-center font-mono text-xs transition-colors duration-300 ${
               activeDay === i ? 'bg-accent text-primary border-accent' : 'border-dark/10 text-dark/40 bg-white/50'
             }`}
           >
-            {day}
+            <Icon size={18} />
           </div>
         ))}
       </div>
@@ -185,6 +188,9 @@ const RelentlessGamesCard = () => (
     <p className="font-mono text-xs text-dark/60 mt-4 text-center">
       A leading studio crafting interactive and immersive experiences.
     </p>
+    <p className="mt-2">
+      <a href="https://relentless.games/">https://relentless.games</a>
+    </p>
     <div className="w-full mt-4">
       <Scheduler />
     </div>
@@ -202,6 +208,9 @@ const UntetherStudioCard = () => (
     </div>
     <p className="font-mono text-xs text-dark/60 mt-4 text-center">
       A leading studio crafting interactive and immersive experiences.
+    </p>
+        <p className="mt-2">
+      <a href="https://untether.studio/">https://untether.studio</a>
     </p>
     <div className="w-full mt-4">
       <Shuffler />
