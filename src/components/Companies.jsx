@@ -102,7 +102,7 @@ const UberactCard = () => {
   ];
 
   return (
-    <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center">
+    <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px]">
       <div className="h-24 w-full flex items-center justify-center">
         <img
           src={uberactLogo}
@@ -177,7 +177,7 @@ const Scheduler = () => {
 };
 
 const RelentlessGamesCard = () => (
-  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center">
+  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px]">
     <div className="h-24 w-full flex items-center justify-center">
       <img
         src={relentlessGamesLogo}
@@ -198,7 +198,7 @@ const RelentlessGamesCard = () => (
 );
 
 const UntetherStudioCard = () => (
-  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center">
+  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px]">
     <div className="h-24 w-full flex items-center justify-center">
       <img
         src={untetherStudioLogo}
@@ -249,14 +249,14 @@ export default function Companies() {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-        <div className="feature-card">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 items-stretch">
+        <div className="feature-card h-full">
           <UberactCard />
         </div>
-        <div className="feature-card">
+        <div className="feature-card h-full">
           <RelentlessGamesCard />
         </div>
-        <div className="feature-card">
+        <div className="feature-card h-full">
           <UntetherStudioCard />
         </div>
       </div>
