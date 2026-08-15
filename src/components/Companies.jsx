@@ -5,7 +5,7 @@ import uberactLogo from '../assets/company-logos/uberact-logotype.svg';
 import relentlessGamesLogo from '../assets/company-logos/relentless-games-logo.svg';
 import untetherStudioLogo from '../assets/company-logos/untether-studio-logo.svg';
 
-const ShufflerCard = () => {
+const Shuffler = () => {
   const [cards, setCards] = useState([
     { id: 1, label: 'Creating Lifeforms', status: '...' },
     { id: 2, label: 'Environmental Design', status: '---' },
@@ -25,31 +25,37 @@ const ShufflerCard = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[320px] bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col justify-between overflow-hidden">
-      <div className="z-20">
-        <h3 className="font-sans font-bold text-xl uppercase tracking-tighter">Living Landscapes</h3>
-        <p className="font-mono text-xs text-dark/60 mt-2">World building: Unique and highly immersive environments</p>
-      </div>
-      <div className="relative h-28 w-full mt-auto">
-        {cards.map((card, i) => (
-          <div 
-            key={card.id}
-            className="absolute left-0 right-0 p-4 border border-dark/10 rounded-xl bg-surface transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] flex justify-between items-center"
-            style={{
-              transform: `translateY(${i * 12}px) scale(${1 - i * 0.05})`,
-              zIndex: 10 - i,
-              opacity: 1 - i * 0.2,
-              boxShadow: i === 0 ? '0 10px 20px -10px rgba(0,0,0,0.1)' : 'none'
-            }}
-          >
-            <span className="font-mono text-xs font-bold">{card.label}</span>
-            <span className="font-mono text-[10px] bg-dark text-primary px-2 py-1 rounded-full">{card.status}</span>
-          </div>
-        ))}
-      </div>
+    <div className="relative h-28 w-full">
+      {cards.map((card, i) => (
+        <div 
+          key={card.id}
+          className="absolute left-0 right-0 p-4 border border-dark/10 rounded-xl bg-surface transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] flex justify-between items-center"
+          style={{
+            transform: `translateY(${i * 12}px) scale(${1 - i * 0.05})`,
+            zIndex: 10 - i,
+            opacity: 1 - i * 0.2,
+            boxShadow: i === 0 ? '0 10px 20px -10px rgba(0,0,0,0.1)' : 'none'
+          }}
+        >
+          <span className="font-mono text-xs font-bold">{card.label}</span>
+          <span className="font-mono text-[10px] bg-dark text-primary px-2 py-1 rounded-full">{card.status}</span>
+        </div>
+      ))}
     </div>
   );
 };
+
+const ShufflerCard = () => (
+  <div className="relative w-full h-[320px] bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col justify-between overflow-hidden">
+    <div className="z-20">
+      <h3 className="font-sans font-bold text-xl uppercase tracking-tighter">Living Landscapes</h3>
+      <p className="font-mono text-xs text-dark/60 mt-2">World building: Unique and highly immersive environments</p>
+    </div>
+    <div className="mt-auto">
+      <Shuffler />
+    </div>
+  </div>
+);
 
 const TypewriterTerminal = ({ messages }) => {
   const [text, setText] = useState('');
@@ -237,6 +243,24 @@ const RelentlessGamesCard = () => (
   </div>
 );
 
+const UntetherStudioCard = () => (
+  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center">
+    <div className="h-24 w-full flex items-center justify-center">
+      <img
+        src={untetherStudioLogo}
+        alt="Untether Studio logo"
+        className="max-h-full max-w-full h-full w-auto object-contain"
+      />
+    </div>
+    <p className="font-mono text-xs text-dark/60 mt-4 text-center">
+      A leading studio crafting interactive and immersive experiences.
+    </p>
+    <div className="w-full mt-4">
+      <Shuffler />
+    </div>
+  </div>
+);
+
 export default function Companies() {
   const sectionRef = useRef(null);
 
@@ -276,7 +300,7 @@ export default function Companies() {
           <RelentlessGamesCard />
         </div>
         <div className="feature-card">
-          <CompanyLogoCard name="Untether Studio" logo={untetherStudioLogo} />
+          <UntetherStudioCard />
         </div>
       </div>
       
