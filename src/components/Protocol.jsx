@@ -93,7 +93,7 @@ export default function Protocol() {
             <span className="font-mono text-xl text-accent block mb-4">01</span>
             <h2 className="font-sans font-bold text-5xl md:text-7xl tracking-tighter uppercase mb-6">Initialize</h2>
             <p className="font-mono text-sm text-primary/70 max-w-md leading-relaxed">
-              Establishing base layer connection. Begin mind sync to map parameters. Understand the foundation of art space. Commence design of unique living system.
+              At the core of each company is creativity, solving problems with technology. We solve customer needs in the areas of events, gaming, visualisations and art.
             </p>
           </div>
           <div className="flex justify-center md:justify-end">
@@ -109,7 +109,7 @@ export default function Protocol() {
             <span className="font-mono text-xl text-accent block mb-4">02</span>
             <h2 className="font-sans font-bold text-5xl md:text-7xl tracking-tighter uppercase mb-6">Calibrate</h2>
             <p className="font-mono text-sm text-primary/70 max-w-md leading-relaxed">
-              Iteration of art systems. Real-time experimentation and feedback. Adjust parameters to refine responsiveness and aesthetics. Co-evolve with the system to create a unique living artwork.
+              Iteration is key. Our prototypes are honed repeatedly using real-time feedback and experimentation. We evolve products with customers to fulfill the objective.
             </p>
           </div>
           <div className="flex justify-center md:justify-end">

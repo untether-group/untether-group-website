@@ -79,15 +79,15 @@ const TypewriterTerminal = ({ messages }) => {
 };
 
 const CompanyLogoCard = ({ name, logo }) => (
-  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center">
-    <div className="h-24 w-full flex items-center justify-center">
+  <div className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full">
+    <div className="h-24 w-full flex items-center justify-center mb-6">
       <img
         src={logo}
         alt={`${name} logo`}
         className="max-h-full max-w-full h-full w-auto object-contain"
       />
     </div>
-    <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
+    <p className="font-mono text-xs text-dark/60 text-left w-full min-h-[80px] mb-6">
       A leading studio crafting interactive and immersive experiences.
     </p>
   </div>
@@ -102,21 +102,21 @@ const UberactCard = () => {
   ];
 
   return (
-    <a href="https://uberact.com/" target="_blank" rel="noopener noreferrer" className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px] cursor-pointer">
-      <div className="h-24 w-full flex items-center justify-center">
+    <a href="https://uberact.com/" target="_blank" rel="noopener noreferrer" className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center h-full min-h-[320px] cursor-pointer">
+      <div className="h-24 w-full flex items-center justify-center mb-6">
         <img
           src={uberactLogo}
           alt="Uberact logo"
           className="max-h-full max-w-full h-full w-auto object-contain"
         />
       </div>
-      <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
+      <p className="font-mono text-xs text-dark/60 text-left w-full min-h-[80px] mb-6">
         A leading studio crafting interactive, immersive experiences. We transform physical spaces into living environments that intuitively respond to human presence.
       </p>
-      <p className="mt-2 w-full text-left">
+      <p className="w-full text-left mb-4">
         https://uberact.com
       </p>
-      <div className="w-full mt-4">
+      <div className="w-full mt-auto">
         <TypewriterTerminal messages={messages} />
       </div>
     </a>
@@ -177,42 +177,42 @@ const Scheduler = () => {
 };
 
 const RelentlessGamesCard = () => (
-  <a href="https://relentless.games/" target="_blank" rel="noopener noreferrer" className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px] cursor-pointer">
-    <div className="h-24 w-full flex items-center justify-center">
-      <img
-        src={relentlessGamesLogo}
-        alt="Relentless Games logo"
-        className="max-h-full max-w-full h-full w-auto object-contain"
-      />
-    </div>
-    <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
+    <a href="https://relentless.games/" target="_blank" rel="noopener noreferrer" className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center h-full min-h-[320px] cursor-pointer">
+      <div className="h-24 w-full flex items-center justify-center mb-6">
+        <img
+          src={relentlessGamesLogo}
+          alt="Relentless Games logo"
+          className="max-h-full max-w-full h-full w-auto object-contain"
+        />
+      </div>
+    <p className="font-mono text-xs text-dark/60 text-left w-full min-h-[80px] mb-6">
       An innovative gaming startup developing next-generation VR experiences. Our mission is to make virtual reality accessible through frictionless onboarding and intuitive gameplay.
     </p>
-    <p className="mt-2 w-full text-left">
+    <p className="w-full text-left mb-4">
       https://relentless.games
     </p>
-    <div className="w-full mt-4">
+    <div className="w-full mt-auto">
       <Scheduler />
     </div>
   </a>
 );
 
 const UntetherStudioCard = () => (
-  <a href="https://untether.studio/" target="_blank" rel="noopener noreferrer" className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center justify-center h-full min-h-[320px] cursor-pointer">
-    <div className="h-24 w-full flex items-center justify-center">
-      <img
-        src={untetherStudioLogo}
-        alt="Untether Studio logo"
-        className="max-h-full max-w-full h-full w-auto object-contain"
-      />
-    </div>
-    <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
+    <a href="https://untether.studio/" target="_blank" rel="noopener noreferrer" className="bg-surface border border-dark/10 rounded-[2rem] shadow-sm p-8 flex flex-col items-center h-full min-h-[320px] cursor-pointer">
+      <div className="h-24 w-full flex items-center justify-center mb-6">
+        <img
+          src={untetherStudioLogo}
+          alt="Untether Studio logo"
+          className="max-h-full max-w-full h-full w-auto object-contain"
+        />
+      </div>
+    <p className="font-mono text-xs text-dark/60 text-left w-full min-h-[80px] mb-6">
       A software studio that transforms client ideas into interactive realities. We are a highly experienced software studio delivering world class VR, gaming, web, and mobile applications tailored to your unique vision.
     </p>
-    <p className="mt-2 w-full text-left">
+    <p className="w-full text-left mb-4">
       https://untether.studio
     </p>
-    <div className="w-full mt-4">
+    <div className="w-full mt-auto">
       <Shuffler />
     </div>
   </a>

@@ -303,15 +303,15 @@ export default function Philosophy() {
         
         {/* --- NEW: Text broken out using the SplitText wrapper --- */}
         <p className="font-mono text-sm md:text-base text-primary/60 uppercase mb-8">
-          <SplitText text="Most art focuses on: " className="mr-2" />
-          <SplitText text="static observation." className="text-primary" />
+          <SplitText text="Our companies focus on: " className="mr-2" />
+          <SplitText text="customer needs." className="text-primary" />
         </p>
 
         <h2 className="text-4xl md:text-6xl lg:text-[7rem] leading-[1.1] text-primary">
-          <SplitText text="We focus on:" className="font-sans font-bold uppercase tracking-tighter" />
+          <SplitText text="Need:" className="font-sans font-bold uppercase tracking-tighter" />
           <br />
-          <SplitText text="Active " className="font-drama italic text-accent pr-4" />
-          <SplitText text="Resonance." className="font-drama italic text-primary" />
+          <SplitText text="Desired" className="font-drama italic text-accent pr-4" />
+          <SplitText text="State." className="font-drama italic text-primary" />
         </h2>
 
       </div>
