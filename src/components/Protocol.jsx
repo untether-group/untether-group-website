@@ -125,8 +125,7 @@ export default function Protocol() {
             <span className="font-mono text-xl text-accent block mb-4">03</span>
             <h2 className="font-sans font-bold text-5xl md:text-7xl tracking-tighter uppercase mb-6">Integrate</h2>
             <p className="font-mono text-sm text-primary/70 max-w-md leading-relaxed">
-              Seamless resonance achieved. The digital divide dissolves, leaving 
-              a living atmospheric architecture that reflects your intent.
+              Customer needs achieved. Market fit established. Product ready for launch.
             </p>
           </div>
           <div className="flex justify-center md:justify-end">
