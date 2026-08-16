@@ -123,9 +123,9 @@ export default function Protocol() {
         <div className="card-inner max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <span className="font-mono text-xl text-accent block mb-4">03</span>
-            <h2 className="font-sans font-bold text-5xl md:text-7xl tracking-tighter uppercase mb-6">Integrate</h2>
+            <h2 className="font-sans font-bold text-5xl md:text-7xl tracking-tighter uppercase mb-6">Launch</h2>
             <p className="font-mono text-sm text-primary/70 max-w-md leading-relaxed">
-              Customer needs achieved. Market fit established. Product ready for launch.
+              Customer needs achieved. Market fit established. Product launched.
             </p>
           </div>
           <div className="flex justify-center md:justify-end">
