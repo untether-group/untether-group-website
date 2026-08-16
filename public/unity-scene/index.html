@@ -148,6 +148,14 @@
         createUnityInstance(canvas, config, (progress) => {
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
+                // Expose the Unity instance to the parent page (same-origin) so
+                // React can call SendMessage. Also notify the parent that Unity
+                // is ready to receive actions.
+                window.unityInstance = unityInstance;
+                if (window.parent && window.parent !== window) {
+                  window.parent.postMessage({ type: 'unity-ready' }, '*');
+                }
+
                 document.querySelector("#unity-loading-bar").style.display = "none";
                 const fullscreenButton = document.querySelector("#unity-fullscreen-button");
                 if (fullscreenButton) {

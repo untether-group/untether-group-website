@@ -1,8 +1,10 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import UnityActionPanel from './UnityActionPanel';
 
 export default function Hero() {
   const containerRef = useRef(null);
+  const iframeRef = useRef(null);
 
   const handleScrollToNextSection = () => {
     const nextSection = document.getElementById('features');
@@ -33,6 +35,7 @@ export default function Hero() {
     <section ref={containerRef} className="relative w-full h-[100dvh] overflow-hidden bg-dark">
       {/* Unity WebGL Background */}
       <iframe
+        ref={iframeRef}
         src="/unity-scene/index.html"
         className="absolute inset-0 w-full h-full border-none z-0"
         title="Unity WebGL Application"
@@ -70,6 +73,8 @@ export default function Hero() {
       >
         ↓
       </button>
+
+      <UnityActionPanel iframeRef={iframeRef} />
     </section>
   );
 }
