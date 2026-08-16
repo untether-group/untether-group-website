@@ -111,7 +111,7 @@ const UberactCard = () => {
         />
       </div>
       <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
-        A leading studio crafting interactive and immersive experiences.
+        A leading studio crafting interactive, immersive experiences. We transform physical spaces into living environments that intuitively respond to human presence.
       </p>
       <p className="mt-2 w-full text-left">
         https://uberact.com
@@ -186,7 +186,7 @@ const RelentlessGamesCard = () => (
       />
     </div>
     <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
-      A leading studio crafting interactive and immersive experiences.
+      An innovative gaming startup developing next-generation VR experiences. Our mission is to make virtual reality accessible through frictionless onboarding and intuitive gameplay.
     </p>
     <p className="mt-2 w-full text-left">
       https://relentless.games
@@ -207,7 +207,7 @@ const UntetherStudioCard = () => (
       />
     </div>
     <p className="font-mono text-xs text-dark/60 mt-4 text-left w-full">
-      A leading studio crafting interactive and immersive experiences.
+      A software studio that transforms client ideas into interactive realities. We are a highly experienced software studio delivering world class VR, gaming, web, and mobile applications tailored to your unique vision.
     </p>
     <p className="mt-2 w-full text-left">
       https://untether.studio
