@@ -71,7 +71,7 @@ export default function UnityActionPanel({ iframeRef }) {
 
   return (
     <aside
-      className="fixed right-3 top-1/2 z-40 flex -translate-y-1/2 flex-col items-center gap-4 md:right-6"
+      className="absolute right-3 top-1/2 z-40 flex -translate-y-1/2 flex-col items-center gap-4 md:right-6"
       aria-label="Unity action controls"
     >
       {ACTIONS.map(({ value, label, Icon, hoverBg }) => (

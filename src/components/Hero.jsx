@@ -7,7 +7,7 @@ export default function Hero() {
   const iframeRef = useRef(null);
 
   const handleScrollToNextSection = () => {
-    const nextSection = document.getElementById('features');
+    const nextSection = document.getElementById('companies');
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -69,7 +69,7 @@ export default function Hero() {
         type="button"
         onClick={handleScrollToNextSection}
         aria-label="Scroll to next section"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 text-primary text-2xl leading-none pointer-events-auto"
+        className="absolute bottom-8 right-4 z-20 text-primary text-5xl leading-none pointer-events-auto md:left-1/2 md:right-auto md:-translate-x-1/2 md:text-2xl"
       >
         ↓
       </button>
