@@ -1,10 +1,13 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import UnityActionPanel from './UnityActionPanel';
+import heroPoster from '../images/hero.jpg';
 
 export default function Hero() {
   const containerRef = useRef(null);
   const iframeRef = useRef(null);
+  const [unityLoaded, setUnityLoaded] = useState(false);
+  const [posterHidden, setPosterHidden] = useState(false);
 
   const handleScrollToNextSection = () => {
     const nextSection = document.getElementById('companies');
@@ -31,6 +34,51 @@ export default function Hero() {
     return () => ctx.revert();
   }, []);
 
+  // Show the hero.jpg poster until the Unity app has finished loading. The
+  // Unity scene posts a "unity-ready" message once the instance is ready;
+  // polling contentWindow.unityInstance covers the case where that message
+  // was posted before this component mounted (e.g. a hot reload).
+  useEffect(() => {
+    const markLoaded = () => setUnityLoaded(true);
+
+    const onMessage = (event) => {
+      if (event.data && event.data.type === 'unity-ready') {
+        markLoaded();
+      }
+    };
+
+    const checkReady = () => {
+      const win = iframeRef.current && iframeRef.current.contentWindow;
+      return !!(win && win.unityInstance);
+    };
+
+    window.addEventListener('message', onMessage);
+
+    if (checkReady()) {
+      markLoaded();
+      return () => window.removeEventListener('message', onMessage);
+    }
+
+    const pollId = setInterval(() => {
+      if (checkReady()) {
+        clearInterval(pollId);
+        markLoaded();
+      }
+    }, 500);
+
+    return () => {
+      clearInterval(pollId);
+      window.removeEventListener('message', onMessage);
+    };
+  }, [iframeRef]);
+
+  // Once loaded, let the poster fade out before removing it from the DOM.
+  useEffect(() => {
+    if (!unityLoaded) return undefined;
+    const timer = setTimeout(() => setPosterHidden(true), 700);
+    return () => clearTimeout(timer);
+  }, [unityLoaded]);
+
   return (
     <section ref={containerRef} className="relative w-full h-[100dvh] overflow-hidden bg-dark">
       {/* Unity WebGL Background */}
@@ -42,6 +90,18 @@ export default function Hero() {
         style={{ pointerEvents: 'auto', width: '100vw', height: '100vh', maxWidth: '100%', maxHeight: '100%', left: 0, top: 0 }}
         allowFullScreen
       ></iframe>
+
+      {/* Loading poster — covers the Unity app until it finishes loading */}
+      {!posterHidden && (
+        <img
+          src={heroPoster}
+          alt=""
+          aria-hidden="true"
+          className={`absolute inset-0 z-[5] h-full w-full object-cover transition-opacity duration-700 ease-out ${
+            unityLoaded ? 'pointer-events-none opacity-0' : 'opacity-100'
+          }`}
+        />
+      )}
 
       {/* Content */}
       <div className="relative z-10 w-full h-full flex flex-col justify-end p-4 landscape:p-3 md:p-16 lg:p-24 pb-10 landscape:pb-3 md:pb-20 pointer-events-none">
